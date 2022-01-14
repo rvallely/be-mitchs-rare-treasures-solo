@@ -10,6 +10,7 @@ exports.createShopRef = (shopRows) => {
         ref[shopRow.shop_name] = shopRow.shop_id;
     });
     //console.log('THIS IS THE REF', ref);
+    //
     return ref;
 };
 
