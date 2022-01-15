@@ -7,26 +7,19 @@ const db = require("../db");
 const seed = require("../db/seed");
 const testData = require("../db/data/test-data");
 const { request } = require("express");
-const { app } = require("faker/lib/locales/en");
+//const { app } = require("faker/lib/locales/en");
 
 afterAll(() => db.end());
 
-// added 'return' to beforeEach, as per set up in lecture...
 beforeEach(() => { 
     return seed(testData) 
 });
 
 describe("Our server", () => {
     test.only("Inserts data into the treasures table and returns an updated table", () => {
-        // test logic goes here - see Paul's walkthrough video from Thursday afternoon
+        return request(app)
     });
 });
-
-// --------------------------- COPIED THESE TEST EXAMPLES------------------------------ //
-// Paul also added a view-db.sql file in root directory and ran 'psql -f view-db.sql > view-db.txt' in command line
-
-// TEST 1 TO UPDATE: copied from Paul's lecture - needs changing to suit our project
-// see models and controllers setup in video
 
 describe("GET /api/films", () => {
     test("200 (ok): responds with an array of films", () => {

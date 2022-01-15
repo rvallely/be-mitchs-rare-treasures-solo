@@ -50,7 +50,6 @@ const seed = ({ shopData, treasureData }) => {
         formattedTreasures
         );
         return db.query(sql);
-
     })
 
 };
