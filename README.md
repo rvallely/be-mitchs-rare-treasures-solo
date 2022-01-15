@@ -56,21 +56,25 @@ Create an endpoint to allow Mitch to view all the treasures currently available.
 
 _responds with all treasures, including the shop name and details_
 
-- each treasure should have the following keys:
+- each treasure should have the following keys:  - DONE
 
   - treasure_id
   - treasure_name
   - colour
   - age
   - cost_at_auction
-  - **shop_name**
+  - **shop_name** -- I'VE MADE THIS SHOP_ID AS IN ORIGINAL INSERTING DATA THE REFERENCE TO A SHOP WAS THROUGH ID
 
-- default sort criteria: **age**
-- default sort order: **ascending**
+- default sort criteria: **age**  -- DONE
+- default sort order: **ascending**  -- DONE
 
-  - `/api/treasures`, first result should be the youngest (default)
+  - `/api/treasures`, first result should be the youngest (default)  -- DONE
 
-- Allow a client to sort by `age`, `cost_at_auction` and `treasure_name` with a `sort_by` query.
+- Allow a client to sort by 
+        - `age`,  -- DONE
+        - `cost_at_auction`  -- DONE
+        - `treasure_name`  -- DONE
+        with a `sort_by` query.
 
   - _`/api/treasures?sort_by=cost_at_auction`, for example, should respond with a list of treasures, cheapest firsts._
 

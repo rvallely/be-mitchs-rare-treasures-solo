@@ -21,10 +21,11 @@ const seed = ({ shopData, treasureData }) => {
     .then(() => {
       return db.query(`
       CREATE TABLE treasures (
+        treasure_id SERIAL PRIMARY KEY,
         treasure_name VARCHAR(50) NOT NULL,
         colour VARCHAR(25) NOT NULL, 
         age INT NOT NULL,
-        cost_at_auction FLOAT(2) NOT NULL,
+        cost_at_auction DECIMAL NOT NULL,
         shop_id INT REFERENCES shops(shop_id) 
       );
     `)

@@ -4,34 +4,6 @@
 
 const { formatShopData, createShopRef, formatTreasureData } = require('../utils/seed-formatting');
 
-/*       [
-        { shop_name: 'shop-b', owner: 'firstname-b', slogan: 'slogan-b' },
-        { shop_name: 'shop-d', owner: 'firstname-c', slogan: 'slogan-d' },
-        { shop_name: 'shop-e', owner: 'firstname-d', slogan: 'slogan-e' },
-        { shop_name: 'shop-f', owner: 'firstname-e', slogan: 'slogan-f' },
-        { shop_name: 'shop-g', owner: 'firstname-f', slogan: 'slogan-g' },
-        { shop_name: 'shop-h', owner: 'firstname-a', slogan: 'slogan-h' },
-        { shop_name: 'shop-i', owner: 'firstname-g', slogan: 'slogan-i' },
-        { shop_name: 'shop-a', owner: 'firstname-h', slogan: 'slogan-a' },
-        { shop_name: 'shop-j', owner: 'firstname-i', slogan: 'slogan-j' },
-        { shop_name: 'shop-k', owner: 'firstname-j', slogan: 'slogan-k' },
-        { shop_name: 'shop-c', owner: 'firstname-c', slogan: 'slogan-c' }
-      ] <<< shopData */
-
-/*       [
-        [ 'shop-b', 'firstname-b', 'slogan-b' ],
-        [ 'shop-d', 'firstname-c', 'slogan-d' ],
-        [ 'shop-e', 'firstname-d', 'slogan-e' ],
-        [ 'shop-f', 'firstname-e', 'slogan-f' ],
-        [ 'shop-g', 'firstname-f', 'slogan-g' ],
-        [ 'shop-h', 'firstname-a', 'slogan-h' ],
-        [ 'shop-i', 'firstname-g', 'slogan-i' ],
-        [ 'shop-a', 'firstname-h', 'slogan-a' ],
-        [ 'shop-j', 'firstname-i', 'slogan-j' ],
-        [ 'shop-k', 'firstname-j', 'slogan-k' ],
-        [ 'shop-c', 'firstname-c', 'slogan-c' ]
-      ] <<<formattedShops */
-
 describe('formatShopData', () => {
     test('Returns an empty array when passed an empty array of data.', () => {
         const shopData = [];
